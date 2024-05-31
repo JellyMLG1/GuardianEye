@@ -1,4 +1,0 @@
-manifest.json
-app.js
-style.css
-sw.js

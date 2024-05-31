@@ -1,5 +1,0 @@
-git add <nomeFile>
-git commit -m "<frase del commit>"
-git branch -M <nomeBrench>
-git remote add origin <linkOriginSuGitHub>
-git push -u origin <nomeBrench>

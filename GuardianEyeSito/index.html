@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="utf-8">
+    <title>GuardianEye</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src="app.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" type="image/png" href="image/icon.png" />
+
+</head>
+
+<body>
+    <div class="titleBar">
+        <p id="title">GuardianEye</p>
+    </div>
+    <img id="logo" src="image/icon.png">
+
+    <div id="sideBar" class="">
+        <div id="barContents">
+            <p id="home"><button id="bHome">Home</button></p>
+            <img src="image/home.png" id="imgHome">
+            <p id="record"><button id="bRecord" onclick="window.location.href='record.html'">Record</button></p>
+            <img src="image/record.png" id="imgRecord">
+            <p id="myProfile"><button id="bMyProfile" onclick="window.location.href='myProfile.html'">MyProfile</button>
+            </p>
+            <img src="image/myprofile.png" id="imgMyProfile">
+        </div>
+        <img src="image/menu.png" onclick="openCloseBar()" id="openClose">
+
+        <div id="homeContent">
+            <button id="device1" onclick="window.location.href='stream.html'">Dispositivo 1</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

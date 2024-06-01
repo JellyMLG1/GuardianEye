@@ -22,21 +22,24 @@
     <div id="sideBar">
         <div id="barContents">
             <p id="home"><button id="bHome" onclick="window.location.href='index.html'">Home</button></p>
-            <img src="image/home.png" id="imgHome">
+            <img src="image/home.png" id="imgHome" onclick="window.location.href='index.html'">
             <p id="record"><button id="bRecord" onclick="window.location.href='record.html'">Record</button></p>
-            <img src="image/record.png" id="imgRecord">
+            <img src="image/record.png" id="imgRecord" onclick="window.location.href='record.html'">
             <p id="myProfile"><button id="bMyProfile" onclick="window.location.href='myProfile.html'">MyProfile</button>
             </p>
-            <img src="image/myprofile.png" id="imgMyProfile">
+            <img src="image/myprofile.png" id="imgMyProfile" onclick="window.location.href='myProfile.html'">
+
+            <img id="logomenu" src="image/icon.png">
         </div>
         <img src="image/menu.png" onclick="openCloseBar()" id="openClose">
+
+        
     </div>
 
 
 
     <div id="stream">
-        <img style="display: block;-webkit-user-select: none;margin: auto;background-color: hsl(0, 0%, 25%);"
-            src="http://raspandrillizz:8081/">
+        <img id="streamVideo" src="http://raspandrillizz:8081/">
     </div>
 </body>
 

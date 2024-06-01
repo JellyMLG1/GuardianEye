@@ -1,3 +1,12 @@
+p {
+    color: black;
+}
+
+button{
+    color: black;
+    border-color: black;
+}
+
 .titleBar {
     position: fixed;
     top: 0;
@@ -6,17 +15,26 @@
     height: 2.5rem;
     width: 100%;
     text-align: center;
+    
     z-index: -9999;
     background-color: #3376F9;
+}
+
+#title{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
 }
 
 #logo{
     position: fixed;
     right: 0.3rem;
-    top: 0.5rem;
-    width: 2rem;
+    top: 0.2rem;
+    width: 3rem;
     height: auto;
-    cursor: pointer;
+    z-index: 9999;
 }
 
 #sideBar {
@@ -40,18 +58,33 @@
     cursor: pointer;
 }
 
+#logomenu{
+    position: absolute;
+    margin: 0 auto;
+    margin-left: 0.5rem;
+    bottom: 1rem;
+    width: 100%;
+    max-width: 7rem;
+    transition: 0.4s;
+}
+
 #sideBar.open {
     left: 0;
-    width: 10rem;
+    width: 8rem;
     background: #3376F9;
 }
 
 #barContents {
+    position: absolute;
+    overflow: hidden;
     transition: 2s;
     display: none;
 }
 
 #sideBar.open #barContents {
+    position: absolute;
+    overflow: hidden;
+    transition: 0.4s;
     display: contents;
 }
 
@@ -77,6 +110,7 @@
     position: fixed;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: #3376F9;
+    text-decoration-color: black;
     cursor: pointer;
 }
 
@@ -90,6 +124,7 @@
     position: fixed;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: #3376F9;
+    text-decoration-color: black;
     cursor: pointer;
 }
 
@@ -104,6 +139,7 @@
     position: fixed;
     border-radius: 1rem 1rem 1rem 1rem;
     background-color: #3376F9;
+    text-decoration-color: black;
     cursor: pointer;
 }
 
@@ -139,6 +175,7 @@
     width: 30rem;
     margin-top: 5rem;
     margin-left: 3rem;
+    transition: 0.4s;
 }
 
 #imgback {
@@ -179,13 +216,14 @@
 }
 
 #device1 {
-    position: relative;
+    position: absolute;
     border-radius: 1rem 1rem 1rem 1rem;
     width: 100%;
     max-width: 30rem;
     height: 3rem;
     background: #3376F9;
     text-align: left;
+    color: black;
     cursor: pointer;
 }
 
@@ -222,11 +260,25 @@
     margin-left: 3rem;
 }
 
+#streamVideo{
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem 1rem 1rem 1rem;
+    margin-top: 7rem;
+    width: 100%;
+    max-width: 40rem;
+
+}
+
 a.noUnderline{
     text-decoration: none;
 }
 
 @media all and (max-width: 50rem) {
+    p {
+        color: black;
+    }
     #homeContent {
         position: absolute;
         width: 10rem;
@@ -264,4 +316,25 @@ a.noUnderline{
         text-align: center;
         cursor: pointer;
     }
+
+    #streamVideo{
+        position: fixed;
+        display: block;
+        right: 4rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+        width: 100%;
+        max-width: 25rem;
+    }
+
+    #logomenu{
+        position: absolute;
+        margin: 0 auto;
+        margin-left: 0.5rem;
+        margin-top: 31rem;
+        width: 100%;
+        max-width: 6rem;
+        transition: 0.4s;
+    }
+    
 }
